@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +9,78 @@
  <link rel="stylesheet" href="style.css">
   <title>Portfolio - Jeff Welch</title>
 </head>
+
 <body>
   <!-- navbar -->
-<nav>
-  <ul class="topnav" id="dropdownClick">
-    <li class="name-left"><a href="index.html"><h3>Jeff Welch</h3></a></li>
-    <li><a href="index.html">About</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li class="dropdownIcon" ><a href="javascript:void(0);" 
-      onclick="dropMenu()">&#9776;</a></li>
-  </ul>
-</nav>
-<!-- main section  -->
-<section>
-info
-</section>
-<!-- footer -->
+  <nav>
+    <ul class="topnav" id="dropdownClick">
+      <li class="name-left"><a href="index.html">
+          <h3>Jeff Welch</h3>
+        </a></li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropMenu()">&#9776;</a></li>
+    </ul>
+  </nav>
+  <!-- main section  -->
+  <section>
+      <div class="container">
+        <div class="contact">
+            <div class="card-deck">
+                <div class="card">
+                  <img class="card-img-top" src="assets/auction.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="assets/cms.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="assets/driver productivity.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+  <!-- footer -->
   <footer>
-copy &copy; 2018
+    <div class="one">
+      <div class="two">
+        <p> copyright &copy; 2018</p>
+      </div>
+    </div>
   </footer>
 
 
 
 
-<script>
-function dropMenu () {
-  var n = document.getElementById("dropdownClick");
-  if (n.className === "topnav") {
-    n.className += " responsive";
-  } else {
-    n.className = "topnav";
-  }
 
-  console.log(n.className);
-}
-</script>
+  <script>
+    function dropMenu() {
+      var n = document.getElementById("dropdownClick");
+      if (n.className === "topnav") {
+        n.className += " responsive";
+      } else {
+        n.className = "topnav";
+      }
+
+      console.log(n.className);
+    }
+  </script>
 </body>
+
 </html>

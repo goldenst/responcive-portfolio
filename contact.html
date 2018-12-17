@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="reset.css">
- <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Contact - Jeff Welch</title>
 </head>
+
 <body>
   <!-- navbar -->
-<nav>
-  <ul class="topnav" id="dropdownClick">
-    <li class="name-left"><a href="index.html"><h3>Jeff Welch</h3></a></li>
-    <li><a href="index.html">About</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li class="dropdownIcon" ><a href="javascript:void(0);" 
-      onclick="dropMenu()">&#9776;</a></li>
-  </ul>
-</nav>
-<!-- main section  -->
-<section> 
-<div class="container">
-  <div class="contact">
-    <form action="">
-      <label for="contact">Name</label><br>
-      <input type="text" id="name" placeholder="Name"><br>
-      <label>E-mail</laBel><br>
-        <input type="email" name="" id="email" placeholder="John@something.com"><br>
-        <label for="">Comments</label><br>
-        <textarea name="" id="comments" cols="10" rows="3"></textarea>
-        <button class="subCon"type="submit">Submit</button>
-    </form>
-  </div>
-</div>
-</section>
-<!-- footer -->
+  <nav>
+    <ul class="topnav" id="dropdownClick">
+      <li class="name-left"><a href="index.html">
+          <h3>Jeff Welch</h3>
+        </a></li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropMenu()">&#9776;</a></li>
+    </ul>
+  </nav>
+  <!-- main section  -->
+  <section>
+    <div class="container">
+      <div class="contact">
+        <form action="">
+          <label for="contact">Name</label><br>
+          <input type="text" id="name" placeholder="Name"><br>
+          <label>E-mail</laBel><br>
+          <input type="email" name="" id="email" placeholder="John@something.com"><br>
+          <label for="">Comments</label><br>
+          <textarea name="" id="comments" cols="10" rows="3"></textarea>
+          <button class="subCon" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+
   <footer>
-copy &copy; 2018
+    <div class="one">
+      <div class="two">
+        <p> copyright &copy; 2018</p>
+      </div>
+    </div>
   </footer>
 
 
 
 
-<script>
-function dropMenu () {
-  var n = document.getElementById("dropdownClick");
-  if (n.className === "topnav") {
-    n.className += " responsive";
-  } else {
-    n.className = "topnav";
-  }
 
-  console.log(n.className);
-}
-</script>
+  <script>
+    function dropMenu() {
+      var n = document.getElementById("dropdownClick");
+      if (n.className === "topnav") {
+        n.className += " responsive";
+      } else {
+        n.className = "topnav";
+      }
+
+      console.log(n.className);
+    }
+  </script>
 </body>
+
 </html>
